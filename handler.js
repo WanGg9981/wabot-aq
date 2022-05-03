@@ -77,8 +77,8 @@ module.exports = {
           if (!('viewonce' in chat)) chat.viewonce = false
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
-          detect: false,
+          welcome: true,
+          detect: true,
           sWelcome: '',
           sBye: '',
           sPromote: '',
@@ -106,11 +106,11 @@ module.exports = {
           anticall: false,
           autoread: false,
           nyimak: false,
-          restrict: false,
+          restrict: true,
           self: false,
           pconly: false,
           gconly: false,
-          jadibot: false,
+          jadibot: true,
         }
       } catch (e) {
         console.error(e)
