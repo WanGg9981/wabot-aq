@@ -33,27 +33,21 @@ const defaultMenu = {
 ╭─「 %me 」
 │ Hai, %name!
 │
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
-│
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
+│ Limit: %limit
+│ Role: %role
+│ Level: %level
+│ Exp: %exp
+│ Tanggal: %week, %date
+│ Waktu: %time (MYS)
+│ Uptime: %uptime
+│ User: %rtotalreg dari %totalreg
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',
   footer: '╰────\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+©2022 by Wan (+60 16-449 2583)
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
