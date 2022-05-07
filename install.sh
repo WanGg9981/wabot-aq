@@ -1,5 +1,4 @@
-pkg install nodejs -y
-pkg install ffmpeg -y
-pkg install imagemagick -y
-npm install
-npm update
+git clone https://github.com/WanGg9981/wabot-aq
+cd wabot-aq
+npm i
+node . --server --db "https://wangg.repl.co"
